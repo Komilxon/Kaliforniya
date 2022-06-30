@@ -11,6 +11,7 @@
     font-size: 1.4rem;
     list-style: 1.14;
     font-family: $site-fonts;
+    color: $text-color;
 }
 @mixin responsive($breakpoint) {
     @if($breakpoint == m-phone) {

@@ -1,0 +1,35 @@
+%button {
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    &:hover {
+        transform: scale(1.1s)
+    }
+};
+.search__btn {
+    @extend %button;
+    img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    };
+    @include responsive (tables) {
+         
+    }
+};
+.card__btn {
+    @extend %button;
+    img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+};
+.burger {
+    @include responsive (tables) {
+        display: inline-block;
+    }
+    @extend %button;
+    display: none;
+}
